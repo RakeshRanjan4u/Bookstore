@@ -1,76 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-<title>Navbar Template for Bootstrap</title>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-<!-- Bootstrap core CSS -->
-<link href="../static/css/bootstrap.min.css" rel="stylesheet" />
-
-<link href="../static/css/non-responsive.css" rel="stylesheet" />
-
-<!-- Custom styles for this template -->
-<link href="/css/style.css" rel="stylesheet" />
-<link rel="icon" href="/image/apple-touch-icon.png" />
-</head>
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<head th:replace="common/header :: common-header" />
 
 <body>
-
-
-	<div class="page-top"
-		style="width: 100%; height: 20px; background-color: #f46b42;"></div>
-	<!-- Static navbar -->
-	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Project name</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="./">Default <span
-							class="sr-only">(current)</span></a></li>
-					<li><a href="../navbar-static-top/">Static top</a></li>
-					<li><a href="../navbar-fixed-top/">Fixed top</a></li>
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-		<!--/.container-fluid -->
-	</nav>
-
+	<div th:replace="common/header :: navbar" />
 
 	<div class="container">
 		<div class="row">
@@ -123,7 +57,7 @@
 											literature from 45 BC, making it over 2000 years old.</p>
 									</div>
 								</div>
-
+								...
 							</div>
 
 							<!-- Controls -->
@@ -191,68 +125,77 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<div class="row">
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="row">
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
+						<img src="/image/shelf.png" class="img-responsive" />
+						<div class="carousel-caption">
+							<div class="row">
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<div class="row">
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
+						<img src="/image/shelf.png" class="img-responsive" />
+						<div class="carousel-caption">
+							<div class="row">
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
 							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
-							</div>
-							<div class="col-xs-2">
-								<img class="img-responsive" src="/image/book1.png" />
+						</div>
+					</div>
+					<div class="item">
+						<img src="/image/shelf.png" class="img-responsive" />
+						<div class="carousel-caption">
+							<div class="row">
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
+								<div class="col-xs-2">
+									<img class="img-responsive" src="/image/book1.png" />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -275,17 +218,6 @@
 	<!-- end of container -->
 
 
-
-
-
-
-
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+	<div th:replace="common/header :: body-bottom-scripts" />
 </body>
 </html>
